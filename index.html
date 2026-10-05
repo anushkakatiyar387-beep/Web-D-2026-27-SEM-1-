@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ELCE-1 Timetable</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 20px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            min-width: 1100px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            border: 2px solid #333;
+            padding: 12px 8px;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #222;
+            color: white;
+        }
+
+        .day {
+            background-color: #eeeeee;
+            font-weight: bold;
+        }
+
+        .physics {
+            background-color: #8dcc52;
+        }
+
+        .electrical {
+            background-color: #18a9df;
+        }
+
+        .maths {
+            background-color: #f7ad00;
+        }
+
+        .programming {
+            background-color: #fff0d0;
+        }
+
+        .environment {
+            background-color: #00a94f;
+            color: white;
+        }
+
+        .ai {
+            background-color: #ffff00;
+        }
+
+        .lab {
+            background-color: #e8792e;
+            color: white;
+        }
+
+        .mentor {
+            background-color: #cfd4df;
+        }
+
+        .lunch {
+            background-color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .heading {
+            background-color: #444;
+            color: white;
+        }
+
+        .code {
+            font-weight: bold;
+        }
+
+        .time {
+            font-size: 12px;
+        }
+
+        .legend {
+            margin-top: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .legend h2 {
+            text-align: center;
+        }
+
+        .legend table {
+            min-width: 700px;
+        }
+
+        @media screen and (max-width: 700px) {
+            body {
+                padding: 5px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>ELCE-1 Timetable</h1>
+
+    <div class="table-container">
+
+        <table>
+
+            <tr>
+                <th>Day</th>
+                <th>08:50-09:40</th>
+                <th>09:40-10:30</th>
+                <th>10:40-11:30</th>
+                <th>11:30-12:20</th>
+                <th>12:20-01:10</th>
+                <th>01:10-02:00</th>
+                <th>02:00-02:50</th>
+                <th>02:50-03:40</th>
+                <th>03:40-04:30</th>
+            </tr>
+
+            <!-- MONDAY -->
+            <tr>
+                <td class="day">Monday</td>
+
+                <td colspan="2" class="physics">
+                    <span class="code">25AS151</span><br>
+                    (AG, RSA)<br>
+                    KC Block III Floor (KC-310)
+                </td>
+
+                <td class="maths">
+                    <span class="code">25AS102</span><br>
+                    (PM)<br>
+                    BH-308
+                </td>
+
+                <td class="physics">
+                    <span class="code">25AS101</span><br>
+                    (AG)<br>
+                    BH-308
+                </td>
+
+                <td class="lunch" rowspan="3">
+                    LUNCH
+                </td>
+
+                <td class="programming">
+                    <span class="code">25CS101</span><br>
+                    (ABS)<br>
+                    BH-308
+                </td>
+
+                <td class="maths">
+                    <span class="code">25AS102</span><br>
+                    (PM, SY)<br>
+                    BH-308
+                </td>
+
+                <td class="electrical">
+                    <span class="code">25EL101</span><br>
+                    (IR)<br>
+                    BH-308
+                </td>
+
+                <td class="mentor">
+                    <span class="code">25VA101</span><br>
+                    (DDH)<br>
+                    BH-308
+                </td>
+            </tr>
+
+
+            <!-- TUESDAY -->
+            <tr>
+                <td class="day">Tuesday</td>
+
+                <td class="electrical">
+                    <span class="code">25EL101</span><br>
+                    (IR)<br>
+                    BH-308
+                </td>
+
+                <td class="maths">
+                    <span class="code">25AS102</span><br>
+                    (PM)<br>
+                    BH-308
+                </td>
+
+                <td class="environment">
+                    <span class="code">25AS103</span><br>
+                    (MG)<br>
+                    BH-308
+                </td>
+
+                <td class="physics">
+                    <span class="code">25AS101</span><br>
+                    (AG)<br>
+                    BH-308
+                </td>
+
+                <td class="maths">
+                    <span class="code">25AS102</span><br>
+                    (PM)<br>
+                    BH-308
+                </td>
+
+                <td class="programming">
+                    <span class="code">25CS101</span><br>
+                    (ABS)<br>
+                    BH-308
+                </td>
+
+                <td colspan="2" class="lab">
+                    <span class="code">25ME152</span><br>
+                    (DTS, DAS)<br>
+                    RJ Block I Floor (RJ-109)
+                </td>
+            </tr>
+
+
+            <!-- WEDNESDAY -->
+            <tr>
+                <td class="day">Wednesday</td>
+
+                <td class="physics">
+                    <span class="code">25AS101</span><br>
+                    (AG)<br>
+                    BH-308
+                </td>
+
+                <td class="electrical">
+                    <span class="code">25EL101</span><br>
+                    (IR)<br>
+                    BH-308
+                </td>
+
+                <td class="maths">
+                    <span class="code">25AS102</span><br>
+                    (PM)<br>
+                    BH-308
+                </td>
+
+                <td class="ai">
+                    <span class="code">25AI101</span><br>
+                    (PPS)<br>
+                    BH-308
+                </td>
+
+                <td class="lunch">
+                    LUNCH
+                </td>
+
+                <td colspan="2" class="programming">
+                    <span class="code">25CS151</span><br>
+                    (ABS)<br>
+                    BH-308
+                </td>
+
+                <td class="mentor">
+                    Mentor-Mentee<br>
+                    (AG, PM, DDH)<br>
+                    BH-308
+                </td>
+            </tr>
+
+
+            <!-- THURSDAY -->
+            <tr>
+                <td class="day">Thursday</td>
+
+                <td class="ai">
+                    <span class="code">25AI101</span><br>
+                    (PPS)<br>
+                    BH-308
+                </td>
+
+                <td class="electrical">
+                    <span class="code">25EL101</span><br>
+                    (IR)<br>
+                    BH-308
+                </td>
+
+                <td class="environment">
+                    <span class="code">25AS103</span><br>
+                    (MG)<br>
+                    BH-308
+                </td>
+
+                <td class="programming">
+                    <span class="code">25CS101</span><br>
+                    (ABS)<br>
+                    BH-308
+                </td>
+
+                <td class="lunch">
+                    LUNCH
+                </td>
+
+                <td class="physics">
+                    <span class="code">25AS101</span><br>
+                    (AG)<br>
+                    BH-308
+                </td>
+
+                <td class="maths">
+                    <span class="code">25AS102</span><br>
+                    (PM)<br>
+                    BH-308
+                </td>
+
+                <td colspan="2" class="electrical">
+                    <span class="code">25EL151</span><br>
+                    (IR, DSM)<br>
+                    RJ-Basement
+                </td>
+            </tr>
+
+
+            <!-- FRIDAY -->
+            <tr>
+                <td class="day">Friday</td>
+
+                <td class="programming">
+                    <span class="code">25CS101</span><br>
+                    (ABS)<br>
+                    BH-308
+                </td>
+
+                <td class="maths">
+                    <span class="code">25AS102</span><br>
+                    (PM)<br>
+                    BH-308
+                </td>
+
+                <td colspan="2" class="mentor">
+                    <b>25VA151</b><br>
+                    (DDH)<br>
+                    Group-1: KCG-08<br><br>
+
+                    <b>25VA151</b><br>
+                    (SPR)<br>
+                    Group-2: KCG-09
+                </td>
+
+                <td class="lunch">
+                    LUNCH
+                </td>
+
+                <td class="environment">
+                    <span class="code">25AS103</span><br>
+                    (MG)<br>
+                    BH-308
+                </td>
+
+                <td class="physics">
+                    <span class="code">25AS101</span><br>
+                    (AG)<br>
+                    BH-308
+                </td>
+
+                <td class="electrical">
+                    <span class="code">25EL101</span><br>
+                    (IR)<br>
+                    BH-308
+                </td>
+
+                <td class="ai">
+                    <span class="code">25AI101</span><br>
+                    (PPS)<br>
+                    BH-308
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+    <!-- SUBJECT DETAILS -->
+
+    <div class="legend">
+
+        <h2>Subject Details</h2>
+
+        <table>
+
+            <tr class="heading">
+                <th>Code</th>
+                <th>Subject</th>
+                <th>Faculty</th>
+            </tr>
+
+            <tr class="physics">
+                <td>25AS101</td>
+                <td>Applied Physics</td>
+                <td>Dr. Anubha Gupta (AG)</td>
+            </tr>
+
+            <tr class="electrical">
+                <td>25EL101</td>
+                <td>Basics of Electrical Engg.</td>
+                <td>Ms. Isha Rajput (IR)</td>
+            </tr>
+
+            <tr class="maths">
+                <td>25AS102</td>
+                <td>Fundamentals of Linear Algebra and Statistics</td>
+                <td>Dr. Priti Madan (PM)</td>
+            </tr>
+
+            <tr class="programming">
+                <td>25CS101</td>
+                <td>Programming in C++</td>
+                <td>Mr. Abhishek Shukla (ABS)</td>
+            </tr>
+
+            <tr class="environment">
+                <td>25AS103</td>
+                <td>Environment & Sustainability</td>
+                <td>Dr. Nandita Gauram (MG)</td>
+            </tr>
+
+            <tr class="ai">
+                <td>25AI101</td>
+                <td>Essentials of AI</td>
+                <td>Mr. Pankaj Pratap Singh (PPS)</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</body>
+</html>
