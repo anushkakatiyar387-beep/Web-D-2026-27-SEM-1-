@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Profile</title>
+<style>
+  body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  .main{
+    border: 1px solid black;
+    width: 750px;
+    padding: 15px;
+  }
+  .top{
+    display: flex;
+  }
+  .left{
+    width: 200px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+  }
+  .left img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 1px solid black;
+  }
+  .right{
+    margin-left: 20px;
+    flex: 1;
+  }
+  .right table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .right th, .right td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+  }
+  .right th{
+    background-color: #f2f2f2;
+    width: 120px;
+  }
+</style>
+</head>
+<body>
+
+<div class="main">
+  <h2 align="center">MY PROFILE</h2>
+
+  <div class="top">
+    <div class="left">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn7bYIkhuyxUastpndzski0TFOGun1Al_fYWW4_LaJ0Q&s=10" alt="My Photo">
+      <br><br>
+      <b>My Photo</b>
+    </div>
+
+    <div class="right">
+      <table>
+        <tr><th>Name</th><td>Anushka Katiyar</td></tr>
+        <tr><th>Course</th><td>B.Tech ELCE-1</td></tr>
+        <tr><th>College</th><td>ABES Engineering College</td></tr>
+        <tr><th>City</th><td>Ghaziabad</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <h3>About Me</h3>
+  <p>I am a student of ELCE. I am interested in Web Development, <mark>Artificial Intelligence</mark> and <u>Data Science</u>. I like to learn new technologies and build creative projects.</p>
+
+</div>
+
+</body>
+</html>
